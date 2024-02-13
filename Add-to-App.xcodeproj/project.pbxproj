@@ -13,9 +13,12 @@
 		B2E86CBB2B35835300CD4FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E86CB92B35835300CD4FC4 /* Main.storyboard */; };
 		B2E86CBD2B35835500CD4FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E86CBC2B35835500CD4FC4 /* Assets.xcassets */; };
 		B2E86CC02B35835500CD4FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E86CBE2B35835500CD4FC4 /* LaunchScreen.storyboard */; };
+		B2FE013B2B3596CE0097B916 /* Pods_Add_to_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F605A6B3DA8911EF3A47EBF4 /* Pods_Add_to_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BF502C6D3BC385C46294624 /* Pods-Add-to-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Add-to-App.debug.xcconfig"; path = "Target Support Files/Pods-Add-to-App/Pods-Add-to-App.debug.xcconfig"; sourceTree = "<group>"; };
+		83660DCA7D0E4328E77CC004 /* Pods-Add-to-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Add-to-App.release.xcconfig"; path = "Target Support Files/Pods-Add-to-App/Pods-Add-to-App.release.xcconfig"; sourceTree = "<group>"; };
 		B2E86CB02B35835300CD4FC4 /* Add-to-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Add-to-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E86CB32B35835300CD4FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E86CB52B35835300CD4FC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		B2E86CBC2B35835500CD4FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E86CBF2B35835500CD4FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E86CC12B35835500CD4FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FE01372B3596C20097B916 /* FlutterPluginRegistrant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlutterPluginRegistrant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F605A6B3DA8911EF3A47EBF4 /* Pods_Add_to_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Add_to_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FE013B2B3596CE0097B916 /* Pods_Add_to_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0457D652B1ABB4D7D8BCFD8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2FE01372B3596C20097B916 /* FlutterPluginRegistrant.framework */,
+				F605A6B3DA8911EF3A47EBF4 /* Pods_Add_to_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		765C59FDC3A0B61B6C7B8C9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BF502C6D3BC385C46294624 /* Pods-Add-to-App.debug.xcconfig */,
+				83660DCA7D0E4328E77CC004 /* Pods-Add-to-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B2E86CA72B35835300CD4FC4 = {
 			isa = PBXGroup;
 			children = (
 				B2E86CB22B35835300CD4FC4 /* Add-to-App */,
 				B2E86CB12B35835300CD4FC4 /* Products */,
+				765C59FDC3A0B61B6C7B8C9A /* Pods */,
+				0457D652B1ABB4D7D8BCFD8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2E86CC42B35835500CD4FC4 /* Build configuration list for PBXNativeTarget "Add-to-App" */;
 			buildPhases = (
+				4D432E307D395D3A549D7DAC /* [CP] Check Pods Manifest.lock */,
+				D3D3D80AAD96201B0AAD1B90 /* [CP-User] Run Flutter Build add_to_app_flutter_module Script */,
 				B2E86CAC2B35835300CD4FC4 /* Sources */,
 				B2E86CAD2B35835300CD4FC4 /* Frameworks */,
 				B2E86CAE2B35835300CD4FC4 /* Resources */,
+				9E91D92D1D6235EBE5F63CE8 /* [CP-User] Embed Flutter Build add_to_app_flutter_module Script */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D432E307D395D3A549D7DAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Add-to-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E91D92D1D6235EBE5F63CE8 /* [CP-User] Embed Flutter Build add_to_app_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build add_to_app_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../add_to_app_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		D3D3D80AAD96201B0AAD1B90 /* [CP-User] Run Flutter Build add_to_app_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build add_to_app_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../add_to_app_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2E86CAC2B35835300CD4FC4 /* Sources */ = {
@@ -282,6 +356,7 @@
 		};
 		B2E86CC52B35835500CD4FC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF502C6D3BC385C46294624 /* Pods-Add-to-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,14 +376,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nitor.Add-to-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B2E86CC62B35835500CD4FC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83660DCA7D0E4328E77CC004 /* Pods-Add-to-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,9 +407,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nitor.Add-to-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
